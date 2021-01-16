@@ -1,0 +1,10 @@
+@mixin font ($fw, $fs, $lh) {
+   font-weight: $fw;
+   font-size: $fs;
+   line-height: $lh;
+}
+@mixin pseudo($display, $pos, $content){
+   content: $content;
+   display: $display;
+   position: $pos;
+ }

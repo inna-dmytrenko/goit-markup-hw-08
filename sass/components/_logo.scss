@@ -1,0 +1,16 @@
+.logo {
+    font-family: $secondary-font;
+    @include font (700, 26px, 1.192);
+    letter-spacing: 0.03em;
+   
+    .header & {
+        color: #000000;
+        margin-right: 90px;
+    }
+    .footer & {
+        display: flex;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+}
+
