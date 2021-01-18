@@ -10,7 +10,32 @@
   letter-spacing: 0.03em;
   color: #212121;
 }
+.team__subtitle {
+  @include font (500, 16px, 19px);
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.team__desc {
+  @include font (400, 16px, 1.188);
+  letter-spacing: 0.03em;
+  color: #757575;
 
+  padding-bottom: 16px;
+}
+.team__item {
+      background: #FFFFFF;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 0px 0px 4px 4px;
+      padding-bottom: 30px;
+    
+      // &:not(:last-child) {
+      //   margin-right: 30px;
+      // }
+
+
+
+color: #212121;}
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   
