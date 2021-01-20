@@ -1,16 +1,27 @@
 .logo {
     font-family: $secondary-font;
-    @include font (700, 26px, 1.192);
+    @include font (700, 24px, 28px);
     letter-spacing: 0.03em;
    
     .header & {
         color: #000000;
-        margin-right: 90px;
+        display: flex;
     }
     .footer & {
         color: #FFFFFF;
-        display: block;
+        display: flex;
+        justify-content: center;
         margin-bottom: 20px;
       }
+}
+@media screen and (min-width: 1200px) {
+    .footer .logo {
+        justify-content: left;
+        
+      }
+      .logo {
+        
+        @include font (700, 26px, 31px);
+    }
 }
 

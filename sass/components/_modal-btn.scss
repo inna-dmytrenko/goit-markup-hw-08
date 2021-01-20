@@ -1,5 +1,5 @@
 .modal-btn {
-    @include font (700, 16px, 1.875);
+    @include font (700, 16px, 30px);
     letter-spacing: 0.06em;
     color: #FFFFFF; 
 
@@ -19,7 +19,7 @@
     
     // justify-content: center;
     // align-items: center;
-    padding: 10px 62px 10px 29px;
+    padding: 10px 61px 10px 29px;
     border: #2196F3;
     background: #2196F3;
     margin-top: 20px;

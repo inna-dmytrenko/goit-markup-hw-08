@@ -51,29 +51,37 @@
   }
 
   .social-links__title {
-    @include font (700, 14px, 1.143);
+    @include font (700, 14px, 16px);
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
     color: #FFFFFF;
   
     margin-bottom: 20px;
-   
+   padding-top: 12px;
 
   }
   .social-links  {
     display: flex;
     flex-direction: column;
     margin: 60px auto;
+    
     // margin-right: auto;
     // margin-left: auto;
   }
   @media screen and (min-width: 768px) {
     .social-links  {
-     width: 230px;
-     flex-wrap: wrap;
-     margin: 0;
+    
+    margin: 0;
     }
+   
+  }
+  @media screen and (min-width: 1200px) {
+    .social-links  {
+    
+    margin-right: 93px;
+    }
+   
   }
     
   
