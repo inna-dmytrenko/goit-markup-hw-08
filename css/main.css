@@ -39,6 +39,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
 }
 
 ul {
@@ -92,16 +93,16 @@ a {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  padding: 10px 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
 }
 
 .footer .modal-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 10px 62px 10px 29px;
   border: #2196F3;
   background: #2196F3;
-  padding: 0;
+  margin-top: 20px;
 }
 
 .backdrop {
@@ -329,8 +330,8 @@ a {
 }
 
 .footer .logo {
-  display: flex;
   color: #FFFFFF;
+  display: block;
   margin-bottom: 20px;
 }
 
@@ -388,14 +389,21 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #FFFFFF;
-  padding-top: 12px;
   margin-bottom: 20px;
 }
 
 .social-links {
   display: flex;
   flex-direction: column;
-  margin-right: 93px;
+  margin: 60px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .social-links {
+    width: 230px;
+    flex-wrap: wrap;
+    margin: 0;
+  }
 }
 
 .header {
@@ -732,8 +740,46 @@ a .nav__item {
   color: #212121;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  team__picture {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 30px;
+  }
+  .team__item:nth-last-child(2n) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+  }
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .team__item:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
+  .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .client {
@@ -757,6 +803,10 @@ a .nav__item {
   border: 1px solid #2196F3;
 }
 
+.client-list__item:nth-last-child(2n) {
+  margin-right: 30px;
+}
+
 .client-list {
   display: flex;
   flex-wrap: wrap;
@@ -770,7 +820,7 @@ a .nav__item {
   line-height: 33px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .client-list__item {
@@ -792,24 +842,44 @@ a .nav__item {
 }
 
 @media screen and (min-width: 768px) {
-  .client-list__item:nth-last-child(-n+3) {
-    margin-bottom: 0px;
+  .client-list__item:nth-last-child(2n) {
+    margin-right: 0px;
   }
   .client-list__link {
-    display: flex;
     width: 226px;
   }
 }
 
-.footer__adrress a {
-  color: #FFFFFF;
+@media screen and (min-width: 1200px) {
+  .client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .client-list__link {
+    width: 170px;
+  }
+  .client-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .client-list__item {
+    margin-bottom: 0px;
+  }
+  .client__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
 }
 
-.footer .address {
-  width: 231px;
-  display: flex;
-  flex-direction: column;
-  margin-right: 70px;
+.footer {
+  background: #2F303A;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.footer__adrress a {
+  color: #FFFFFF;
 }
 
 .footer__mail a,
@@ -824,14 +894,17 @@ a .nav__item {
   letter-spacing: 0.03em;
 }
 
-.footer {
-  background: #2F303A;
-  padding-bottom: 60px;
-  padding-top: 60px;
+.footer .address {
+  width: 231px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .footer .item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .mailing__title {
@@ -840,19 +913,14 @@ a .nav__item {
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 12px;
   margin-bottom: 20px;
+  padding-right: 29px;
   color: #FFFFFF;
 }
 
-.mailing__form {
-  display: flex;
-}
-
 .mailing__email {
-  margin-right: 12px;
   display: inline-block;
-  width: 358px;
+  width: 100%;
   padding: 14px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -861,7 +929,7 @@ a .nav__item {
 }
 
 .mailing__email-input {
-  width: 100%;
+  width: 450px;
   border: 0px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0);
@@ -884,5 +952,15 @@ a .nav__item {
   height: 24px;
   fill: #FFFFFF;
   margin-left: 10px;
+  position: absolute;
+  top: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .address {
+    display: flex;
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=main.css.map */

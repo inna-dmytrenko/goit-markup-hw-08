@@ -56,17 +56,25 @@
     text-transform: uppercase;
 
     color: #FFFFFF;
-    padding-top: 12px;
+  
     margin-bottom: 20px;
+   
+
   }
   .social-links  {
     display: flex;
     flex-direction: column;
-    margin-right: 93px;
-    
+    margin: 60px auto;
+    // margin-right: auto;
+    // margin-left: auto;
   }
-  
- 
+  @media screen and (min-width: 768px) {
+    .social-links  {
+     width: 230px;
+     flex-wrap: wrap;
+     margin: 0;
+    }
+  }
     
   
   
