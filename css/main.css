@@ -464,6 +464,12 @@ a {
   display: block;
 }
 
+.icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;

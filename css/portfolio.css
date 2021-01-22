@@ -253,6 +253,12 @@ a {
   display: block;
 }
 
+.icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
 .footer {
   background: #2F303A;
   padding-bottom: 60px;

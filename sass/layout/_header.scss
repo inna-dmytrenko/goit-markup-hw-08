@@ -37,7 +37,31 @@
     display: block;
   }
 }
+// .nav {
+//         display: flex;
+//         // align-items: center;
 
+//     &__item{
+//         @include font (500, 14px, 1.143);
+//         letter-spacing: 0.02em;
+        
+//         // position: relative;
+
+//         &:not(:last-child) {
+//             margin-right: 50px;
+//         }
+//     }
+//     &__items {
+//         display: flex;
+//         // align-items: center;
+//       }     
+//     } 
+.icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px
+}
+  
 
 // .header {
 //         border-bottom: 1px solid  #EEEEEE; 
