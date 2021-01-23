@@ -16,46 +16,45 @@
         <!-- Header -->
         <header class="header">
             <div class="container">
-                <nav class="nav">
-                    <button type="button" class="menu-buttom">
-                        <svg  wight="40" 
-                              height="40"
-                              aria-label="Переключатель мобильного меню" >
+                <button type="button" class="menu-button" 
+                    aria-expanded="false"
+                    aria-controls="menu-container"
+                    data-menu-button>
+                        <svg width="24" height="16" aria-label="Переключатель мобильного меню" >
                             <use class="icon-menu" href="./images/sprite.svg#menu"></use>
-                            <use class="icon-crros" href="./images/sprite.svg#crros"></use>
+                            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
                         </svg>
                     </button>
                     <a href="./index.html" class="logo">
                         <span class="colortext">Web</span>Studio
                     </a>
-                    <ul class="nav__items">
-                        <li class="nav__item">
-                            <a href="./index.html" class="link block">Студия</a>
+                    <div class="menu-container" id="menu-container" data-menu>
+                <nav class="nav">
+                    
+            
+                        <ul class="nav__items" >
+                            <li class="nav__item"><a href="./index.html" class="link  block">Студия</a></li>
+                            <li class="nav__item"><a href="./portfolio.html" class="link accent block">Портфолио</a></li>
+                            <li class="nav__item"><a href="" class="link block">Контакты</a></li>
+                        </ul>
+                </nav>
+                    <ul class="address">
+                        <li class="header__mail">
+                            <a href="mailto:info@devstudio.com" class="link">
+                                <svg class="icon" >
+                                    <use href="./images/sprite.svg#envelope"> </use>
+                                </svg> info@devstudio.com
+                            </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="./portfolio.html" class="link accent block">Портфолио</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="" class="link block">Контакты</a>
+                        <li class="header__tel">
+                            <a href="tel:+380961111111" class="link"> 
+                                <svg class="icon" >
+                                    <use href="./images/sprite.svg#smartphone"> </use>
+                                </svg> +38 096 111 11 11
+                            </a>
                         </li>
                     </ul>
-                </nav>
-                <ul class="address">
-                    <li class="header__mail">
-                        <a href="mailto:info@devstudio.com" class="link">
-                            <svg class="icon">
-                                <use href="./images/sprite.svg#envelope"> </use>
-                            </svg> info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="header__tel">
-                        <a href="tel:+380961111111" class="link"> 
-                            <svg class="icon">
-                                <use href="./images/sprite.svg#smartphone"> </use>
-                            </svg> +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>
+                    </div>
             </div>
         </header>
         <main>
@@ -284,5 +283,8 @@
         </div> 
 
    </footer>
+   <script src="./js/menu.js"> 
+
+   </script>
     </body>
 </html>
