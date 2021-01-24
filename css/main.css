@@ -525,6 +525,15 @@ a .nav__item {
   transform: translateY(3px);
 }
 
+.nav__item {
+  letter-spacing: 0.02em;
+  position: relative;
+}
+
+.nav__items {
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .menu-button {
     padding-bottom: 10px;
@@ -565,7 +574,7 @@ a .nav__item {
   .menu-container.is-open {
     display: block;
   }
-  .header .container {
+  .header {
     padding-top: 16px;
     padding-bottom: 16px;
     position: relative;
@@ -574,14 +583,11 @@ a .nav__item {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-    letter-spacing: 0.02em;
-    position: relative;
   }
   .nav__item:not(:last-child) {
     margin-bottom: 40px;
   }
   .nav__items {
-    display: flex;
     flex-wrap: wrap;
     max-width: 100px;
     justify-content: center;
@@ -613,7 +619,6 @@ a .nav__item {
     align-items: center;
   }
   .nav__items {
-    display: flex;
     margin-right: 80px;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -622,8 +627,6 @@ a .nav__item {
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    letter-spacing: 0.02em;
-    position: relative;
   }
   .nav__item:not(:last-child) {
     margin-right: 50px;
