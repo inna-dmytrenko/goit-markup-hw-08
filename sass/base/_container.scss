@@ -2,7 +2,6 @@
   width: 100%;
   padding: 0 15px;
   text-align: center;
- 
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -13,37 +12,10 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-   
   }
 } 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    
   }
 } 
-
-
-// .container {
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin: 0 auto;
-
-//     .work-examples &{
-//         text-align: center; 
-//       }
-    
-//     .footer & {
-//         display: flex;
-//     }  
-//     .header & {
-//         display: flex;
-//         align-items: center;
-//         justify-content: space-between;
-//       }
-//       .hero & {
-//         text-align: center;
-//       }
-    
-
-// } 

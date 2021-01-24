@@ -24,47 +24,42 @@
   padding-bottom: 16px;
 }
 .team__item {
-      background: #FFFFFF;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-      border-radius: 0px 0px 4px 4px;
-      padding-bottom: 30px;
-      color: #212121;
-      
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
+  color: #212121;
 }
 @media screen and (min-width: 480px) and (max-width: 767px){
-
   .team__item:not(:last-child) {
-            margin-bottom: 30px;
-          }
-          team__picture {
-            width: 100%;
-          }
+    margin-bottom: 30px;
+  }
+  team__picture {
+    width: 100%;
+  }
 }
 
- @media screen and (min-width: 768px){
-   .team__items {
-     display: flex;
-     flex-wrap: wrap;
-
-   }
-   .team__item:nth-last-child(-n+2) {
+@media screen and (min-width: 768px){
+  .team__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team__item:nth-last-child(-n+2) {
     margin-bottom: 30px;
   }
   .team__item:nth-last-child(2n) {
     margin-right: 30px;
   }
- }
- @media screen and (min-width: 1200px) {
-   .team__title {
-    // text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
     margin-bottom: 50px;
     @include font (700, 36px, 42px);
     letter-spacing: 0.03em;
   }
   .team {
-      padding-top: 94px;
-      padding-bottom: 94px;
-
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
   .team__item:nth-last-child(-n+2) {
     margin-bottom: 0px;
@@ -73,53 +68,3 @@
     margin-right: 30px;
   }
 }
- 
-//  @media screen and (min-width: 1200px) {
-
-//  }
-// .team {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-//   background-color: #F5F4FA;
-
-//   &__subtitle {
-//     @include font (500, 16px, 1.188);
-//     letter-spacing: 0.03em;
-//     padding-top: 30px;
-//     padding-bottom: 10px;
-//   }
-  
-  
-//   &__desc {
-//     @include font (400, 16px, 1.188);
-//     letter-spacing: 0.03em;
-//     color: #757575;
-  
-//     padding-bottom: 16px;
-//   }
-//   &__items {
-//     display: flex;
-//     text-align: center;
-//     justify-content: center;
-  
-//   }
-//   &__item {
-//     background: #FFFFFF;
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 0px 0px 4px 4px;
-//     padding-bottom: 30px;
-  
-//     &:not(:last-child) {
-//       margin-right: 30px;
-//     }
-//   }
-  
-//   &__title {
-//     text-align: center;
-//     margin-bottom: 50px;
-//     @include font (700, 36px, 1.167);
-//     letter-spacing: 0.03em;
-//   }
- 
-// }
-

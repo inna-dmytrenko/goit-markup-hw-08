@@ -106,6 +106,7 @@ a {
 }
 
 .backdrop {
+  overflow-y: scroll;
   position: fixed;
   left: 0;
   top: 0;
@@ -130,8 +131,8 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
@@ -171,7 +172,7 @@ a {
 .modal__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -228,6 +229,11 @@ a {
 }
 
 .modal__form-message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -249,8 +255,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
   color: #757575;
@@ -259,7 +265,7 @@ a {
 .modal__form-policy-text::before {
   display: inline-block;
   content: "";
-  margin-right: 9px;
+  margin-right: 8px;
   vertical-align: text-top;
   width: 18px;
   height: 17px;
@@ -284,8 +290,8 @@ a {
 
 .modal__form-policy-link {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196F3;
@@ -314,6 +320,36 @@ a {
 .modal__form-btn:hover, .modal__form-btn:focus {
   background-color: #2196F3;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__form-policy-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
+  .modal__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .modal__form-message {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .modal__form-policy-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .backdrop {
+    overflow: hidden;
+  }
 }
 
 .logo {
@@ -491,12 +527,13 @@ a .nav__item {
 
 @media screen and (max-width: 767px) {
   .menu-button {
-    display: flex;
-    padding: 6px 8px;
+    padding-bottom: 10px;
     background-color: transparent;
     border: none;
     position: absolute;
-    right: 0px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
   }
   .menu-button:hover, .menu-button:focus {
     fill: #2196F3;

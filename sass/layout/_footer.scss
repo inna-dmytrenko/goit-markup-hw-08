@@ -3,7 +3,6 @@
   background: #2F303A;;
   padding-bottom: 60px;
   padding-top: 60px;  
-  // display: inline;
 }
 .footer__adrress a{
   color: #FFFFFF; 
@@ -75,8 +74,7 @@
     display: flex;
     margin-left: 0;
     flex-wrap: wrap;
-
-   }
+  }
   .footer .container{
     display: flex;
     flex-wrap: wrap;
@@ -108,118 +106,15 @@
     // display: flex;
     margin: 0;
   }
-  .mailing__email-input {
-    // width: 100%;
-    // border: 0px;
-    // box-sizing: border-box;
-    // background-color: rgba(255, 255, 255, 0);
-    // outline: none;
-    // @include font (400, 16px, 1.25);
-    // letter-spacing: 0.03em;
-    // color: rgba(255, 255, 255, 0.6);
-    // padding: 0;
-  }
   .mailing__email {
-
-    // display: inline-block;
     width: 358px;
     margin-right: 8px;
-    // padding: 14px 16px;
-    // border: 1px solid rgba(255, 255, 255, 0.3);
-    // box-sizing: border-box;
-    // filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    // border-radius: 4px;
   }
   .footer .container {
     text-align: left;
-  
   }
   .mailing__title {
-   padding-top: 12px;
-   margin-bottom: 0;
-   
-    
+    padding-top: 12px;
+    margin-bottom: 0;
   }
 }
-
-
-
-
-
-
-// .footer__adrress a{
-//     color: #FFFFFF; 
-//   }
-// .footer .address {
-//     width: 231px;
-//     display: flex;
-//     flex-direction: column;
-//     margin-right: 70px;
-//   }
-// .footer__mail a,
-// .footer__tel a {
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-  
-// .footer .link {
-//     @include font (400, 14px, 1.714);
-//     letter-spacing: 0.03em;
-//   }
-  
-// .footer {
-//     background: #2F303A;;
-//     padding-bottom: 60px;
-//     padding-top: 60px;
-//   }
-  
-//   .footer .item:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
-  
-  
-//   .mailing__title {
-//     @include font (700, 14px, 1.143);
-//     letter-spacing: 0.03em;
-//     text-transform: uppercase;
-//     padding-top: 12px;
-//     margin-bottom: 20px;
-//     color: #FFFFFF;
-//   }
- 
-//   .mailing__form {
-//     display: flex;
-//   }
-//   .mailing__email {
-//     margin-right: 12px;
-//     display: inline-block;
-//     width: 358px;
-//     padding: 14px 16px;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     box-sizing: border-box;
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//   }
-//   .mailing__email-input {
-//     width: 100%;
-//     border: 0px;
-//     box-sizing: border-box;
-//     background-color: rgba(255, 255, 255, 0);
-//     outline: none;
-//     @include font (400, 16px, 1.25);
-//     letter-spacing: 0.03em;
-//     color: rgba(255, 255, 255, 0.6);
-//     padding: 0;
-
-
-//   }
-//   .mailing__email-input::placeholder{
-//     font-weight: 400;
-//     color: rgba(255, 255, 255, 0.6);
-//   }
-  
-//   .mailing__icon {
-//     width: 24px;
-//     height: 24px;
-//     fill: #FFFFFF;
-//     margin-left: 10px;
-//   }

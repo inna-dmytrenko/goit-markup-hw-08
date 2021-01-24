@@ -1,16 +1,14 @@
 @media screen and (max-width: 767px) {
- .work-examples {
-   display: none;
- }
+  .work-examples {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .work-examples {
     display: none;
   }
 }
-
 @media screen and (min-width: 1200px) {
-
   .work-examples {
     display: flex;
     padding-bottom: 94px;
@@ -23,8 +21,6 @@
       display: flex;
       justify-content: center;
     }
-    
-    
     &__title {
       margin-bottom: 50px;
     }
@@ -55,7 +51,6 @@
       bottom: 0px;
       width: 100%;
     }
-    
   }
 }
 

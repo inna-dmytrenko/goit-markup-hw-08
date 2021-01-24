@@ -1,89 +1,69 @@
 .social-list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-
 .social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    background: #ffffff;
-    border-radius: 50%;
-
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-      &:hover,
-      &:focus {
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
       background: #2196F3
-      }
-
+    }
   .footer & {
     background: rgba(255, 255, 255, 0.1);
 
     &:hover,
     &:focus {
-    background: #2196F3
+      background: #2196F3
     }
-  
   }
 }
 
-  .social-list__icon {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
+.social-list__icon {
+  width: 20px;
+  height: 20px;
+  fill: #AFB1B8;
 
-    .social-list__link:hover &,
-    .social-list__link:focus & {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
     fill:#ffffff;
-    
-    }
-   .footer & {
+  }
+  .footer & {
     fill: #ffffff;
-    }
   }
+}
+.social__item:not(:last-child)  {
+  margin-right: 10px;
+}
 
-  .social__item:not(:last-child)  {
-    margin-right: 10px;
-  }
-
-  .social-links__title {
-    @include font (700, 14px, 16px);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: #FFFFFF;
-  
-    margin-bottom: 20px;
-   padding-top: 12px;
-
-  }
-  .social-links  {
+.social-links__title {
+  @include font (700, 14px, 16px);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+.social-links  {
     display: flex;
     flex-direction: column;
     margin: 60px auto;
-    
-    // margin-right: auto;
-    // margin-left: auto;
-  }
-  @media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 768px) {
     .social-links  {
-    
-    margin: 0;
+      margin: 0;
     }
-   
-  }
-  @media screen and (min-width: 1200px) {
-    .social-links  {
-    
+}
+@media screen and (min-width: 1200px) {
+  .social-links  {
     margin-right: 93px;
-    }
-   
   }
-    
-  
-  
-  
+}
